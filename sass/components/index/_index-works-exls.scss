@@ -1,0 +1,38 @@
+.work-examles-sct {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-examples {
+  @extend %flexList;
+  & > li {
+    width: calc((100% - 60px) / 3);
+    margin-left: 30px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+}
+
+.work-examples-overlay {
+  position: relative;
+}
+
+.work-examples-descriptions {
+  position: absolute;
+  display: inline-flex;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: $wite-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
