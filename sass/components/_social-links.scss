@@ -1,12 +1,12 @@
 .social-links-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0px;
   margin-top: 16px;
 
   & > li {
-    width: calc((100% - 30px) / 4);
-    margin-right: 10x;
+    // width: calc((100% - 30px) / 4);
+    margin-right: 10px;
 
     &:last-child {
       margin-right: 0;

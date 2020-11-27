@@ -1,22 +1,30 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients-list {
   @extend %flexList;
-  & > .items {
-    width: calc((100% - 150px) / 6);
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0px;
-    }
+  flex-wrap: wrap;
+  & .items {
+    width: calc((100% - 30px) / 2);
+  }
+  & .items:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  & > .items:nth-child(2n) {
+    margin-left: 30px;
+    // width: calc((100% - 150px) / 6);
+    // margin-right: 30px;
+    //   &:last-child {
+    //     margin-right: 0px;
+    //   }
+    // }
   }
 }
-
 .clients-links {
   display: inline-flex;
-  width: 170px;
+  width: 100%;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;

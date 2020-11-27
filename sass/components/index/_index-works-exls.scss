@@ -1,8 +1,14 @@
 .work-examles-sct {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  display: none;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 
+  @media screen and (min-width: 1440px) {
+    & {
+      display: block;
+    }
+  }
+}
 .work-examples {
   @extend %flexList;
   & > li {
