@@ -2,20 +2,35 @@
   color: $accent-color;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
+  @media screen and (min-width: 1440px) {
+    & {
+      font-size: 26px;
+    }
+  }
 }
 
 .logo-end {
   color: $primary-text-color;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
+  @media screen and (min-width: 1440px) {
+    & {
+      font-size: 26px;
+    }
+  }
 }
 .logo-end-footer {
   color: $wite-color;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
+  @media screen and (min-width: 1440px) {
+    & {
+      font-size: 26px;
+    }
+  }
 }
 
 .logo-link {
@@ -23,5 +38,6 @@
   text-decoration: none;
   @media screen and (min-width: 768px) {
     margin-right: 88px;
+    margin-left: auto;
   }
 }
