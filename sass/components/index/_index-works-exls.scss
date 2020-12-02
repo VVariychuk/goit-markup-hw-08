@@ -1,9 +1,9 @@
 .work-examles-sct {
   display: none;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     & {
       display: block;
     }
