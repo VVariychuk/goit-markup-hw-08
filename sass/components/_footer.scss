@@ -33,7 +33,7 @@
       display: flex;
       flex-wrap: wrap;
       text-align: center;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
       & > div:first-child {
         margin-right: 165px;
@@ -72,7 +72,7 @@
   color: $wite-color;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.15;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -152,7 +152,7 @@ input:-webkit-autofill:focus {
 
   @media screen and (min-width: 1200px) {
     position: absolute;
-    top: -36px;
+    top: -30px;
     margin-bottom: 0px;
   }
 }
