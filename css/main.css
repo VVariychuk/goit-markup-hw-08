@@ -828,7 +828,7 @@ header > .container {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .footer-adress-text > div:first-child {
@@ -902,9 +902,9 @@ header > .container {
   }
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
+.footer-form input:-webkit-autofill,
+.footer-form input:-webkit-autofill:hover,
+.footer-form input:-webkit-autofill:focus {
   -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 0px 1000px #2f303a inset;
 }
@@ -1122,8 +1122,8 @@ input:-webkit-autofill:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  max-height: 609px;
-  max-width: 450px;
+  height: auto;
+  width: 95%;
   padding: 0;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1135,8 +1135,15 @@ input:-webkit-autofill:focus {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    max-height: 581px;
-    max-width: 528px;
+    height: 581px;
+    width: 528px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    height: 609px;
+    width: 450px;
   }
 }
 
@@ -1167,6 +1174,7 @@ input:-webkit-autofill:focus {
 
 .form {
   padding: 40px;
+  width: 100%;
   text-align: center;
 }
 
@@ -1181,6 +1189,10 @@ input:-webkit-autofill:focus {
   margin-bottom: 28px;
 }
 
+.form-list:nth-child(3n) {
+  margin-bottom: 20px;
+}
+
 .form-list > label {
   position: absolute;
   left: 0;
@@ -1193,6 +1205,8 @@ input:-webkit-autofill:focus {
 }
 
 .form-list > input {
+  width: 100%;
+  height: 40px;
   padding: 12px 12px 12px 42px;
   font-weight: normal;
   font-size: 12px;
@@ -1204,7 +1218,7 @@ input:-webkit-autofill:focus {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-list > input {
     width: 370px;
   }
@@ -1238,7 +1252,7 @@ input:-webkit-autofill:focus {
 .offer {
   display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   font-size: 12px;
   line-height: 1.166;
   color: #757575;
@@ -1263,7 +1277,7 @@ input:-webkit-autofill:focus {
 }
 
 .check-icon {
-  display: inline-block;
+  display: block;
   width: 16px;
   height: 16px;
   margin-right: 8.38px;
@@ -1278,6 +1292,7 @@ input:-webkit-autofill:focus {
   border-color: transparent;
   background-color: #2196f3;
   background-image: url("../images/icon-check.svg");
+  background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
 }
@@ -1288,6 +1303,7 @@ input:-webkit-autofill:focus {
 
 .comment {
   resize: none;
+  height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1344,11 +1360,6 @@ input:-webkit-autofill:focus {
   margin-bottom: 0px;
 }
 
-.advantage-list h3 {
-  display: block;
-  text-align: center;
-}
-
 .advantage-list .cards-items {
   font-size: 14px;
   line-height: 1.71;
@@ -1356,6 +1367,13 @@ input:-webkit-autofill:focus {
 
 .advantage-list > li:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .advantage-list h3 {
+    display: block;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {

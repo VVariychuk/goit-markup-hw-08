@@ -33,7 +33,7 @@
       display: flex;
       flex-wrap: wrap;
       text-align: center;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       & > div:first-child {
         margin-right: 165px;
@@ -105,9 +105,9 @@
   }
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
+.footer-form input:-webkit-autofill,
+.footer-form input:-webkit-autofill:hover,
+.footer-form input:-webkit-autofill:focus {
   -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 0px 1000px $primary-background-color inset;
 }

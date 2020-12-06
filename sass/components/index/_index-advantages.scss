@@ -18,16 +18,19 @@
     margin-top: 10px;
     margin-bottom: 0px;
   }
-  & h3 {
-    display: block;
-    text-align: center;
-  }
+
   & .cards-items {
     font-size: 14px;
     line-height: 1.71;
   }
   & > li:not(:last-child) {
     margin-bottom: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    & h3 {
+      display: block;
+      text-align: center;
+    }
   }
   @media screen and (min-width: 768px) {
     display: flex;
